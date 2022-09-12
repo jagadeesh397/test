@@ -1,0 +1,15 @@
+
+Jenkins Installation: 
+Jenkins is an open source automation server that has become a crucial component in the likes of Kubernetes and GitOps. Jenkins enables the continuous integration and delivery of software. Jenkins includes a number of plugins to help the automation of building and deploying your applications.
+I want to walk you through the process of installing Jenkins on Ubuntu Server 18.04.
+What you'll need to install jenkins
+The only things you'll need are a working instance of Ubuntu 18.04 and a user account with sudo privileges. With those in hand, let's make some automation magic.
+Jenkins requires Java to function, Here's how to install a version of Jenkins that will make the installation and usage of Jenkins possible:
+1.	Open a terminal window on your Ubuntu server.
+2.	Issue the command sudo apt install default-jdk-headless.
+3.	Allow the installation to complete.
+
+Inorder to verify the java version : 
+Java -version
+Successful installation will give the below output
+
