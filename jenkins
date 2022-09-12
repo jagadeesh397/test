@@ -12,4 +12,32 @@ Jenkins requires Java to function, Here's how to install a version of Jenkins th
 Inorder to verify the java version : 
 Java -version
 Successful installation will give the below output
+ 
+
+
+
+
+
+
+
+How to install Jenkins
+Next we install Jenkins. Go back to your terminal window and follow these steps:
+1.	Download and install the necessary GPG key with the command
+ wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+2.	Add the necessary repository with the command 
+sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+3.	Add the universe repository with the command sudo add-apt-repository universe.
+4.	Update apt with the command sudo apt-get update.
+5.	Install Jenkins with the command 
+sudo apt-get install jenkins –y --allow-unauthenticated
+
+How to install tomcat8 in UBUNTU
+https://ftp.wayne.edu/apache/tomcat/tomcat-8/v8.5.57/bin/apache-tomcat-8.5.57.tar.gz
+8080 port is the default port of Jenkins and If the port 8080  is using by another server then we need to change the port number is Jenkins file which is located in the below path.
+Vim /etc/default/Jenkins
+ 
+
+Edit vi /etc/sudoers file and add this line to execute shell command with Jenkins user
+
+jenkins ALL=(ALL) NOPASSWD: ALL
 
